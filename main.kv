@@ -1,0 +1,19 @@
+BoxLayout: 
+    orientation: 'vertical' 
+
+    BoxLayout:
+
+        TextInput:
+            id: input
+        
+        Button: 
+            id: down_button
+            text: "Download"
+            on_press: app.on_press()
+    
+    MDSpinner:
+        id: spinner
+        size_hint: None, None
+        size: 46, 46
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5} 
+        active: False
